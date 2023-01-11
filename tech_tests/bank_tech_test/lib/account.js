@@ -13,23 +13,22 @@ class Account {
   }
 
   statement() {
-    const statementHeader = "date || credit || debit || balance\n";
-    let statementBody = "";
-    this.transactions.map((transaction) => {
-      //.reverse() could be added but this would break my tests
+    return (
+      "date || credit || debit || balance\n" +
+      this.generateStatementBody().join("")
+    );
+  }
+
+  generateStatementBody() {
+    return this.transactions.map((transaction) => {
       if (transaction.amount > 0) {
-        statementBody =
-          statementBody +
-          `${transaction.date} || ${transaction.amount} || || ${transaction.balanceAfterTransaction}\n`;
+        return `${transaction.date} || ${transaction.amount} || || ${transaction.balanceAfterTransaction}\n`;
       } else {
-        statementBody =
-          statementBody +
-          `${transaction.date} || || ${transaction.amount * -1} || ${
-            transaction.balanceAfterTransaction
-          }\n`;
+        return `${transaction.date} || || ${transaction.amount * -1} || ${
+          transaction.balanceAfterTransaction
+        }\n`;
       }
     });
-    return statementHeader + statementBody;
   }
 
   newTransaction(transaction) {
