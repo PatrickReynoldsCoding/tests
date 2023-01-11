@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 98%);
+  font-family: "poppins", sans-serif;
+}
+
+header {
+  margin: 50px auto;
+  /* tb = 50 lr = auto // this creates space of 50px at the top and bottom*/
+  max-width: 510;
+  max-height: 160;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 200;
+  margin: 0;
+}
+
+h1::after {
+  content: "Powered by Technology";
+  font-weight: 600;
+}
+
+h3 {
+  color: hsl(234, 12%, 34%);
+}
+
+p {
+  color: hsl(229, 6%, 66%);
+  font-size: small;
+}
+
+p.header {
+  color: hsl(229, 6%, 66%);
+  font-size: medium;
+}
+
+/* cards */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1230px;
+  margin: auto;
+}
+
+.box {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.05), 0 10px 10px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  height: 250px;
+  margin: 15px;
+  overflow: hidden;
+  padding: 30px;
+  position: relative;
+  width: 350px;
+}
+
+.box::after {
+  content: "";
+  height: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.red::after {
+  background-color: hsl(0, 78%, 62%);
+}
+.cyan::after {
+  background-color: hsl(180, 62%, 55%);
+}
+.orange::after {
+  background-color: hsl(34, 97%, 64%);
+}
+.blue::after {
+  background-color: hsl(212, 86%, 64%);
+}
+
+.box-push {
+  transform: translateY(50%);
+}
+
+.box:hover {
+  box-shadow: 0 18px 32px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.box h2 {
+  font-size: x-large;
+  margin: 0 0 5px;
+}
+.box p {
+  margin: 10px 0 40px;
+}
+
+.box img {
+  display: block;
+  margin-left: auto;
+}
+
+@media (max-width: 1155px) {
+  .box-push {
+    transform: translateY(0);
+  }
+}

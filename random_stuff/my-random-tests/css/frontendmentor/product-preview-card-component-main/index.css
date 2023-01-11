@@ -1,0 +1,27 @@
+.image-container {
+  display: inline;
+  width: 125px;
+  height: 240px;
+  border-top-right-radius: 4%;
+  border-bottom-right-radius: 4%;
+  background: #100856;
+  margin: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-container {
+  display: inline;
+  width: 125px;
+  height: 240px;
+  border-top-right-radius: 4%;
+  border-bottom-right-radius: 4%;
+  background: #dd6b4d;
+  margin: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

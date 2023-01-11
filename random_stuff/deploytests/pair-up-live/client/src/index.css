@@ -1,0 +1,200 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(-45deg, #716764, #ae8f9b, #d61616, #99f2df);
+  background-size: 400% 400%;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* styling for homepage  */
+
+.header {
+  margin: auto;
+  margin-top: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.header2 {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  width: 400px;
+  height: 90px;
+  font-family: Arial;
+  font-size: 72px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+}
+
+h2 {
+  width: 710px;
+  height: 60px;
+  font-family: Arial;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* button styles  */
+
+.signup-btn,
+.login-btn,
+.next-btn,
+.submit-btn {
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  display: block;
+  text-align: center;
+  width: 120px;
+  height: 30px;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  background-color: #000000;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.next-btn {
+  width: 80px;
+}
+
+.button:hover {
+  background-color: orange;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* styling for sign up name /login pages */
+
+input[type="text"],
+[type="password"],
+[type="email"] {
+  margin: 10px;
+  width: 180px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 0px;
+  justify-content: left;
+}
+
+.form-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.signup-wrapper,
+.login-wrapper {
+  height: fit-content;
+  margin-top: 40vh;
+  display: flex;
+  justify-content: center;
+}
+
+/* styling for sign up skill page */
+
+.codinglevel {
+  text-align: center;
+  margin: auto;
+  margin-top: 200px;
+}
+
+h3 {
+  margin: auto;
+  text-align: center;
+  height: 60px;
+  font-family: Arial;
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* styling for sign up language page */
+
+.languagetype {
+  text-align: center;
+  margin: auto;
+  margin-top: 200px;
+}
+
+/* styling for sign up credentials page */
+.form-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.wrapper {
+  height: fit-content;
+  margin-top: 20vh;
+  display: flex;
+  border: solid 0.25px;
+  box-shadow: 3px 5px 8px 10px rgba(0, 0, 0, 0.2);
+  justify-content: center;
+}
+
+.form {
+  margin: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.submit-btn {
+  align-self: center;
+  font-size: 1rem;
+  background-color: black;
+  height: 40px;
+  width: 80px;
+}
+
+/* styling for nav bar */
+
+.nav-container {
+  display: flex;
+  height: 60px;
+  background-color: #ffffff;
+}
+
+.nav--icon {
+  height: 80px;
+}
