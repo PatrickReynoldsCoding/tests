@@ -20,6 +20,9 @@ class Account {
   }
 
   generateStatementBody() {
+    // replace line 26 with the two lines below to give a reverse chronological order for the statement
+    //     let chronologicalTransactions = [...this.transactions].reverse();
+    //     return chronologicalTransactions.map((transaction) => {
     return this.transactions.map((transaction) => {
       if (transaction.amount > 0) {
         return `${transaction.date} || ${transaction.amount} || || ${transaction.balanceAfterTransaction}\n`;

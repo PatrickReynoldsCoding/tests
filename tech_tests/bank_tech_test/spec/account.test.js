@@ -19,7 +19,7 @@ describe("Account class", () => {
     expect(account.showTransactions()).toEqual([]);
   });
 
-  xit("shows a transaction", () => {
+  it("shows a transaction", () => {
     const mockedTransaction = {
       date: "01/05/2022",
       amount: 10,
@@ -30,6 +30,7 @@ describe("Account class", () => {
     expect(account.showTransactions()).toEqual([
       {
         date: "01/05/2022",
+        balanceAfterTransaction: 10,
         amount: 10,
       },
     ]);
@@ -57,7 +58,7 @@ describe("Account class", () => {
     account.newTransaction(mockedTransaction);
 
     expect(account.statement()).toBe(
-      "date || credit || debit || balance\n01/05/2022 || 10 || || 10"
+      "date || credit || debit || balance\n 01/05/2022 || 10 || || 10"
     );
   });
 
